@@ -8,5 +8,4 @@
 
 ```
 compile 'com.github.fountaintao:CustomControl:customcontrol1.0'
-
 ```
