@@ -16,4 +16,9 @@
         android:layout_margin="8dp"
         android:paddingLeft="10dp" />
 
+    <com.taoyong.widget.combination.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

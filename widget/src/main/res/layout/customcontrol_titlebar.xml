@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dcdcdc"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/customcontrol_title_bar_left_rl"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/customcontrol_title_bar_left_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/custom_control_back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/customcontrol_title_bar_center_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="This is a title."
+        android:textColor="#6976bb"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/customcontrol_title_bar_right_rl"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/customcontrol_title_bar_right_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/custom_control_plus" />
+
+    </RelativeLayout>
+
+</LinearLayout>
