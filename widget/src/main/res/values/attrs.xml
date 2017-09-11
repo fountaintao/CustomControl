@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlideBar">
+        <!--Select the effect-->
+        <attr name="specialEffect">
+            <enum name="none" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+        <!--DataSource-->
+        <attr name="data" format="string" />
+        <!--standard source-->
+        <attr name="standard" format="string" />
+        <!--The background color of the selected time-->
+        <attr name="chooseColor" format="color" />
+        <!--Unselected background color-->
+        <attr name="unChooseColor" format="color" />
+        <!--The font color of the selected time-->
+        <attr name="chooseTextColor" format="color" />
+        <!--The color of the unselected font-->
+        <attr name="unChooseTextColor" format="color" />
+    </declare-styleable>
+
+</resources>

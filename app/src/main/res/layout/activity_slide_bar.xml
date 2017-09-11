@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.taoyong.widget.SlideBar
         android:id="@+id/slideBar"
-        android:layout_width="22dp"
+        android:layout_width="82dp"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true" />
+        android:paddingBottom="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="60dp"
+        app:chooseColor="#64ff0000"
+        app:chooseTextColor="#9500ff"
+        app:data="Q,W,E,R,D,F,J,K,L,U,I,O,1,2,3,4,5,6"
+        app:specialEffect="none"
+        app:standard="D"
+        app:unChooseColor="#c7b9b9"
+        app:unChooseTextColor="#00ff08" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/delinputview"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="48sp"
+        android:visibility="gone" />
 
 </RelativeLayout>
