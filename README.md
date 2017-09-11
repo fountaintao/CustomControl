@@ -1,7 +1,12 @@
 # CustomControl
-自定义控件集.
 
-如果有需要可以这样引用
+这是一个自定义控件集.
 
+<br/>
 
+<i><b>导入方法:</b></i>
+
+```
 compile 'com.github.fountaintao:CustomControl:customcontrol1.0'
+
+```
