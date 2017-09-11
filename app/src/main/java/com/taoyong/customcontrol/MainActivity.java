@@ -1,5 +1,6 @@
 package com.taoyong.customcontrol;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickTitle(View v) {
                 toask_make("This is the title section.");
+            }
+        });
+        //测试SlideBar
+        findViewById(R.id.test_slidebar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SlideBarActivity.class));
             }
         });
     }
