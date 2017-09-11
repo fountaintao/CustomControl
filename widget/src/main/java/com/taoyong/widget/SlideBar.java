@@ -51,7 +51,7 @@ public class SlideBar extends View {
     private int choose;
     //开放一个附加的选中条件
     private boolean additionalConditions;
-    //选中效果的特效
+    //选中效果
     private SpecialEffect specialEffect;
 
     private void init(Context context) {
