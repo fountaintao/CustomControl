@@ -21,4 +21,41 @@
         <attr name="unChooseTextColor" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="RoundImageView">
+        <!--The way the picture is displayed-->
+        <attr name="imageMode">
+            <!--Don't make any changes-->
+            <enum name="none" value="0" />
+            <!--Shows a rounded rectangle-->
+            <enum name="roundRect" value="1" />
+            <!--It's going to be a circle-->
+            <enum name="circle" value="2" />
+            <!--Display as an ellipse-->
+            <enum name="oval" value="3" />
+        </attr>
+        <!--Injection mode of boundary layer-->
+        <attr name="borderMode">
+            <!--Cover the boundary of the image-->
+            <enum name="cover" value="0" />
+            <!--Add width to the image-->
+            <enum name="append" value="1" />
+            <!--Subtract the width from the image-->
+            <enum name="subtract" value="2" />
+        </attr>
+        <!--Width of boundary-->
+        <attr name="borderWidth" format="dimension" />
+        <!--Color of boundary-->
+        <attr name="borderColor" format="color" />
+        <!--The round Angle of the rounded rectangle-->
+        <attr name="radius" format="dimension" />
+        <!--The round Angle of the rounded rectangle , The upper left corner-->
+        <attr name="upperLeftRadius" format="dimension" />
+        <!--The round Angle of the rounded rectangle , The upper right corner-->
+        <attr name="upperRightRadius" format="dimension" />
+        <!--The round Angle of the rounded rectangle , The lower right corner-->
+        <attr name="lowerRightRadius" format="dimension" />
+        <!--The round Angle of the rounded rectangle , The lower left corner-->
+        <attr name="lowerLeftRadius" format="dimension" />
+    </declare-styleable>
+
 </resources>

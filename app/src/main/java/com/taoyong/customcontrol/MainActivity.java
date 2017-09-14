@@ -47,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SlideBarActivity.class));
             }
         });
+        //测试RoundImageView
+        findViewById(R.id.test_roundImageView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RoundImageViewActivity.class));
+            }
+        });
     }
 
     private void toask_make(String msg) {
