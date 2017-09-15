@@ -150,6 +150,7 @@ public class RoundImageView extends ImageView {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     private boolean setImageContent(Canvas canvas) {
         Bitmap bitmap = getBitmapFromDrawable(getDrawable());
         if (null == bitmap) {
@@ -528,7 +529,7 @@ public class RoundImageView extends ImageView {
      *
      * @param bitmap bitmap
      */
-    private Bitmap setPaintBitmapShader(Bitmap bitmap) {
+    private void setPaintBitmapShader(Bitmap bitmap) {
         bitmapWidth *= mScale;
         bitmapHeight *= mScale;
         startX = (width - bitmapWidth) / 2f;
@@ -550,7 +551,6 @@ public class RoundImageView extends ImageView {
         bitmapShader.setLocalMatrix(matrix);
         paint.setShader(bitmapShader);
         paint.setAntiAlias(true);
-        return Bitmap.createScaledBitmap(bitmap, (int) bitmapWidth, (int) bitmapHeight, true);
     }
 
     /**
