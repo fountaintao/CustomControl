@@ -116,6 +116,7 @@ public class RoundImageView extends ImageView {
             if (lowerLeftRadius == -1f) {
                 lowerLeftRadius = radius;
             }
+            a.recycle();
         }
         Log.d(TAG, "init: " + this);
     }
