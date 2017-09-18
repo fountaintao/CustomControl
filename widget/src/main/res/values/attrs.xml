@@ -58,4 +58,10 @@
         <attr name="lowerLeftRadius" format="dimension" />
     </declare-styleable>
 
+    <declare-styleable name="CustomTextView">
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
 </resources>
