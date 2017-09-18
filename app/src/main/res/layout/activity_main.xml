@@ -44,4 +44,10 @@
         app:textColor="@android:color/holo_green_dark"
         app:textSize="20sp" />
 
+    <com.taoyong.widget.MultiLineTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dc"
+        android:padding="8dp" />
+
 </LinearLayout>
