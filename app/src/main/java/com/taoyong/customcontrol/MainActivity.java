@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RoundImageViewActivity.class));
             }
         });
-        //测试
+        //测试CustomTextView
         CustomTextView customTextView = (CustomTextView) findViewById(R.id.customTextView);
         customTextView.setText(520131463);
         customTextView.setTextSize(customTextView.sp2px(36f));
