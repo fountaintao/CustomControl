@@ -130,6 +130,9 @@ public class VolumeView extends View {
         paint.setXfermode(null);
         canvas.restoreToCount(layer);
         paint.reset();
+        if (null != volumeChangeListener) {
+            volumeChangeListener.VolumeChange(currentVolume);
+        }
     }
 
     private float downY;
@@ -180,5 +183,15 @@ public class VolumeView extends View {
         }
         currentVolume--;
         invalidate();
+    }
+
+    private VolumeChangeListener volumeChangeListener;
+
+    public void addVolumeChangeListener(VolumeChangeListener volumeChangeListener) {
+        this.volumeChangeListener = volumeChangeListener;
+    }
+
+    public interface VolumeChangeListener {
+        void VolumeChange(int currentVolume);
     }
 }
