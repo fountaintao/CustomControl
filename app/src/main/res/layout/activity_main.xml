@@ -51,6 +51,7 @@
         android:padding="8dp" />
 
     <com.taoyong.widget.VolumeView
+        android:id="@+id/volumeView"
         android:layout_width="200dp"
         android:layout_height="300dp"
         android:layout_gravity="center_horizontal"

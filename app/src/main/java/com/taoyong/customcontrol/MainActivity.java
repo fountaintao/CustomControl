@@ -4,14 +4,17 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.taoyong.widget.CustomTextView;
+import com.taoyong.widget.VolumeView;
 import com.taoyong.widget.combination.DelInputView;
 import com.taoyong.widget.combination.TitleBar;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
         customTextView.setText(520131463);
         customTextView.setTextSize(customTextView.sp2px(36f));
         customTextView.setTextColor(Color.BLACK);
+        //测试VolumeView
+        VolumeView volumeView = (VolumeView) findViewById(R.id.volumeView);
+        volumeView.addVolumeChangeListener(new VolumeView.VolumeChangeListener() {
+            @Override
+            public void VolumeChange(int currentVolume) {
+                Log.d(TAG, "VolumeChange: " + currentVolume);
+            }
+        });
     }
 
     private void toask_make(String msg) {
