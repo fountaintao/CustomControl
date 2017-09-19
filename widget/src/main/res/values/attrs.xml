@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--The background color of the selected time-->
+    <attr name="chooseColor" format="color" />
+    <!--Unselected background color-->
+    <attr name="unChooseColor" format="color" />
+    <!--Width of boundary-->
+    <attr name="borderWidth" format="dimension" />
+
     <declare-styleable name="SlideBar">
         <!--Select the effect-->
         <attr name="specialEffect">
@@ -11,10 +18,8 @@
         <attr name="data" format="string" />
         <!--standard source-->
         <attr name="standard" format="string" />
-        <!--The background color of the selected time-->
-        <attr name="chooseColor" format="color" />
-        <!--Unselected background color-->
-        <attr name="unChooseColor" format="color" />
+        <attr name="chooseColor" />
+        <attr name="unChooseColor" />
         <!--The font color of the selected time-->
         <attr name="chooseTextColor" format="color" />
         <!--The color of the unselected font-->
@@ -42,8 +47,7 @@
             <!--Subtract the width from the image-->
             <enum name="subtract" value="2" />
         </attr>
-        <!--Width of boundary-->
-        <attr name="borderWidth" format="dimension" />
+        <attr name="borderWidth" />
         <!--Color of boundary-->
         <attr name="borderColor" format="color" />
         <!--The round Angle of the rounded rectangle-->
@@ -64,8 +68,17 @@
         <attr name="textColor" format="color" />
     </declare-styleable>
 
-    <declare-styleable name="MultiLineTextView">
+    <declare-styleable name="MultiLineTextView"></declare-styleable>
 
+    <declare-styleable name="VolumeView">
+        <attr name="borderWidth" />
+        <attr name="chooseColor" />
+        <attr name="unChooseColor" />
+        <attr name="sumVolume" format="integer" />
+        <attr name="currentVolume" format="integer" />
+        <attr name="intervalAngle" format="float" />
+        <attr name="incomplete" format="boolean" />
+        <attr name="centerImage" format="reference" />
     </declare-styleable>
 
 </resources>
