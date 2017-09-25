@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.taoyong.widget.VolumeView
+        android:id="@+id/volumeView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:borderWidth="15dp"
+        app:chooseColor="@color/color64ff0000"
+        app:currentVolume="1"
+        app:incomplete="true"
+        app:intervalAngle="3"
+        app:sumVolume="16"
+        app:unChooseColor="@color/color_dc" />
+
+</RelativeLayout>

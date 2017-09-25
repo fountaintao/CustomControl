@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SlideBarActivity" />
-        <activity android:name=".RoundImageViewActivity"></activity>
+        <activity android:name=".RoundImageViewActivity" />
+        <activity android:name=".TestVDHLayoutActivity" />
+        <activity android:name=".VolumeViewActivity"></activity>
     </application>
 
 </manifest>

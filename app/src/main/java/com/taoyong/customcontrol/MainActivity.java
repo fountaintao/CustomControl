@@ -1,15 +1,11 @@
 package com.taoyong.customcontrol;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.taoyong.widget.CustomTextView;
-import com.taoyong.widget.VolumeView;
 import com.taoyong.widget.combination.DelInputView;
 import com.taoyong.widget.combination.TitleBar;
 
@@ -59,17 +55,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RoundImageViewActivity.class));
             }
         });
-        //测试CustomTextView
-        CustomTextView customTextView = (CustomTextView) findViewById(R.id.customTextView);
-        customTextView.setText(520131463);
-        customTextView.setTextSize(customTextView.sp2px(36f));
-        customTextView.setTextColor(Color.BLACK);
         //测试VolumeView
-        VolumeView volumeView = (VolumeView) findViewById(R.id.volumeView);
-        volumeView.addVolumeChangeListener(new VolumeView.VolumeChangeListener() {
+        findViewById(R.id.test_volumeView).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void VolumeChange(int currentVolume) {
-                Log.d(TAG, "VolumeChange: " + currentVolume);
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, VolumeViewActivity.class));
+            }
+        });
+        //测试VDHLayout
+        findViewById(R.id.test_vdhlayout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TestVDHLayoutActivity.class));
             }
         });
     }

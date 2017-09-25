@@ -38,34 +38,17 @@
             android:layout_height="wrap_content"
             android:text="测试Slidebar" />
 
-        <com.taoyong.widget.CustomTextView
-            android:id="@+id/customTextView"
+        <Button
+            android:id="@+id/test_volumeView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:padding="8dp"
-            app:text="1995"
-            app:textColor="@android:color/holo_green_dark"
-            app:textSize="20sp" />
+            android:text="测试VolumeView" />
 
-        <com.taoyong.widget.MultiLineTextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/test_vdhlayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/color_dc"
-            android:padding="8dp" />
-
-        <com.taoyong.widget.VolumeView
-            android:id="@+id/volumeView"
-            android:layout_width="200dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center_horizontal"
-            app:borderWidth="15dp"
-            app:chooseColor="@color/color64ff0000"
-            app:currentVolume="1"
-            app:incomplete="true"
-            app:intervalAngle="3"
-            app:sumVolume="16"
-            app:unChooseColor="@color/color_dc" />
+            android:text="测试VDHLayout" />
 
     </LinearLayout>
 </ScrollView>
