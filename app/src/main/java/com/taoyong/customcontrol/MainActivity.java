@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.test_vdhlayout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TestVDHLayoutActivity.class));
+                startActivity(new Intent(MainActivity.this, CustomLayoutActivity.class));
             }
         });
     }

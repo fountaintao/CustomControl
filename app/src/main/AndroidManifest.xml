@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".SlideBarActivity" />
         <activity android:name=".RoundImageViewActivity" />
-        <activity android:name=".TestVDHLayoutActivity" />
+        <activity android:name=".CustomLayoutActivity" />
         <activity android:name=".VolumeViewActivity"></activity>
     </application>
 
