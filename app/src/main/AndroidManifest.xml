@@ -29,7 +29,8 @@
         <activity android:name=".RoundImageViewActivity" />
         <activity android:name=".CustomLayoutActivity" />
         <activity android:name=".VolumeViewActivity" />
-        <activity android:name=".IncomingListenerActivity"></activity>
+        <activity android:name=".IncomingListenerActivity" />
+        <activity android:name="com.taoyong.activities.TestFragmentActivity"></activity>
     </application>
 
 </manifest>

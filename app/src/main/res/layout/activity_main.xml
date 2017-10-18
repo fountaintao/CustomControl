@@ -55,5 +55,11 @@
             android:layout_height="wrap_content"
             android:text="测试IncomingListener" />
 
+        <Button
+            android:id="@+id/test_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试Fragment" />
+
     </LinearLayout>
 </ScrollView>

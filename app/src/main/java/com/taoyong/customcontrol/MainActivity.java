@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.taoyong.activities.TestFragmentActivity;
 import com.taoyong.widget.combination.DelInputView;
 import com.taoyong.widget.combination.TitleBar;
 
@@ -74,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, IncomingListenerActivity.class));
+            }
+        });
+        //测试Fragment重叠问题
+        findViewById(R.id.test_fragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TestFragmentActivity.class));
             }
         });
     }
